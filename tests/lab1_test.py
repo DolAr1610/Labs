@@ -1,5 +1,5 @@
 import unittest
-from lab1 import LemerGenerator, gcd, estimate_pi
+from business.lab1 import LemerGenerator, gcd, estimate_pi
 
 class TestLemerGenerator(unittest.TestCase):
     def setUp(self):

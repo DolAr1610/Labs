@@ -1,6 +1,6 @@
 import struct
 import os
-from lab1 import LemerGenerator
+from business.lab1 import LemerGenerator
 
 class RC5CBCPad:
     def __init__(self, key, word_size=32, num_rounds=20):

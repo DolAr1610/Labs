@@ -1,5 +1,5 @@
 import unittest
-from lab2 import MD5, md5_string, md5_file, verify_file
+from business.lab2 import MD5, md5_string, md5_file, verify_file
 
 class TestMD5(unittest.TestCase):
     def test_md5_hashing(self):

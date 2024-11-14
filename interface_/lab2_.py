@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from lab2 import md5_string, md5_file
+from business.lab2 import md5_string, md5_file
 
 class Lab2App:
     def __init__(self, root):

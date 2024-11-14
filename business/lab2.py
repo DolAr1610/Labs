@@ -1,7 +1,6 @@
 import re
 import struct
 import math
-import hashlib
 
 
 def left_rotate(x, c):
@@ -10,14 +9,11 @@ def left_rotate(x, c):
 
 class MD5:
     def __init__(self):
-        # Ініціалізація констант
         self.A = 0x67452301
         self.B = 0xEFCDAB89
         self.C = 0x98BADCFE
         self.D = 0x10325476
-        # Коефіцієнти для кожного раунду
         self.K = [int(abs(math.sin(i + 1)) * (2 ** 32)) & 0xFFFFFFFF for i in range(64)]
-        # Зміщення для кожного раунду
         self.shifts = [7, 12, 17, 22] * 4 + [5, 9, 14, 20] * 4 + [4, 11, 16, 23] * 4 + [6, 10, 15, 21] * 4
 
     def md5_padding(self, message):
@@ -98,3 +94,25 @@ def verify_file(file_path: str, expected_hash: str) -> bool:
     """Порівнює хеш файлу з очікуваним хешем"""
     actual_hash = md5_file(file_path)  # Генеруємо хеш файлу з використанням hashlib
     return actual_hash == expected_hash  # Порівнюємо з очікуваним хешем
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import hashlib

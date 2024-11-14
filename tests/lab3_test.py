@@ -1,5 +1,5 @@
 import unittest
-from lab3 import RC5CBCPad
+from business.lab3 import RC5CBCPad
 
 class TestRC5CBCPad(unittest.TestCase):
     def setUp(self):

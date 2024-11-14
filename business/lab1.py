@@ -10,7 +10,6 @@ class LemerGenerator:
         self.generated_numbers = []
 
     def next(self):
-        """Generates the next number in the sequence."""
         self.state = (self.a * self.state + self.c) % self.m
         self.generated_numbers.append(self.state)
         return self.state
@@ -24,7 +23,6 @@ class LemerGenerator:
         return result[:num_bytes]
 
     def save_to_file(self, filename):
-        """Saves generated numbers to a file."""
         try:
             with open(filename, 'w') as f:
                 for num in self.generated_numbers:
@@ -63,14 +61,12 @@ def estimate_pi(num_pairs, rng_function):
 def generate_lemer_numbers(num_pairs, seed=11, a=12 ** 3, c=987, m=2 ** 25 - 1):
     lemer_gen = LemerGenerator(seed=seed, a=a, c=c, m=m)
 
-    # Generate numbers and store them in generated_numbers list
     for _ in range(num_pairs):
         lemer_gen.next()
 
     pi_est_lemer = estimate_pi(num_pairs, lemer_gen.next)
     period = lemer_gen.find_period()
 
-    # Generate first 16 bytes for display
     bytes_data = lemer_gen.get_bytes(16).hex()
 
     return {

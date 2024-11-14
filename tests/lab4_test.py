@@ -2,8 +2,8 @@ import unittest
 import os
 import time
 from Crypto.Random import get_random_bytes
-from lab4 import RSAEncryption
-from lab3 import RC5CBCPad
+from business.lab4 import RSAEncryption
+from business.lab3 import RC5CBCPad
 
 
 class TestRSAEncryption(unittest.TestCase):

@@ -4,7 +4,7 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 from Crypto.Cipher import PKCS1_OAEP
-from lab3 import RC5CBCPad
+from business.lab3 import RC5CBCPad
 
 
 class RSAEncryption:

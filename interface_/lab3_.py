@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, simpledialog
 from tkinter.scrolledtext import ScrolledText
-from lab2 import MD5
-from lab3 import RC5CBCPad
-from lab1 import LemerGenerator
+from business.lab2 import MD5
+from business.lab3 import RC5CBCPad
+from business.lab1 import LemerGenerator
 
 
 class Lab3App:

@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from lab1 import generate_lemer_numbers
-
+from business.lab1 import generate_lemer_numbers
 
 class Lab1App:
     def __init__(self, root):

@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from lab4 import RSAEncryption
+from business.lab4 import RSAEncryption
 
 
 class Lab4App:
